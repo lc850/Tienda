@@ -16,7 +16,8 @@ public class TiendaOnline {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Producto libro=new Producto("UML y Patrones", 200.00, 4, "Libro de UML");
+        libro.consultarProducto();
     }
     
 }
