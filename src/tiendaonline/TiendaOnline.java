@@ -18,6 +18,7 @@ public class TiendaOnline {
     public static void main(String[] args) {
         Producto libro=new Producto("UML y Patrones", 200.00, 4, "Libro de UML");
         libro.consultarProducto();
+        System.out.println("Prueba de GIT con NetBeans");
     }
     
 }
