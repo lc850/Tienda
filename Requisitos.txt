@@ -1,4 +1,4 @@
-Requisitos del sistema de Tienda en línea
+﻿Requisitos del sistema de Tienda en línea
 ____________________________________________________
 
 - Definir una clase producto con la información necesaria (OK)
@@ -10,7 +10,7 @@ ____________________________________________________
 	- Guardar venta
 	- Consultar venta
 	- Finalizar venta
-- Definir una clase cliente, que contega la información del cliente
+- Definir una clase cliente, que contega la información del cliente (ya)
 	- Nombre
 	- Edad
 	- Dirección

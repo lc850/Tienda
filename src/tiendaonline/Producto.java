@@ -35,7 +35,7 @@ public class Producto {
         System.out.println("Información del producto");
         System.out.println("--------------------------------------");
         System.out.println("Nombre: "+this.nombre);
-        System.out.println("Precio: $ "+this.precio);
+        System.out.println("Precio: $"+this.precio);
         System.out.println("Existencia: "+this.existencia);
         System.out.println("Descripción: "+this.descripcion);
         System.out.println("--------------------------------------");
