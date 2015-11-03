@@ -25,4 +25,13 @@ public class Cliente {
             System.out.println("Direccion: "+this.direccion);
             System.out.println("--------------------------------------");
         }
+         public String getNombre(){
+        	return nombre;
+        }
+        public int getEdad(){
+        	return edad;
+        }
+        public String getDireccion(){
+        	return direccion;
+        }
 }
