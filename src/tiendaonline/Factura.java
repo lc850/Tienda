@@ -5,6 +5,9 @@
  */
 
 package tiendaonline;
+
+import java.util.Date;
+
 /**
  *
  * @author Dracke
@@ -13,7 +16,7 @@ public class Factura{
     
    
    
-    int Fecha;
+    java.util.Date fecha = new Date();
     String Nombre;
     int Edad;
     String Direccion;
@@ -24,7 +27,7 @@ public class Factura{
     
         public Factura(int Fecha,Cliente A,Producto B ){
             
-            this.Fecha = Fecha ;
+            this.fecha = fecha;
             this.Nombre= A.getNombre();
             this.Edad= A.getEdad();
             this.Direccion= A.getDireccion();
@@ -37,7 +40,7 @@ public class Factura{
         System.out.println("--------------------------------------");
         System.out.println("Informacion de la factura");
         System.out.println("--------------------------------------");
-        System.out.println("Fecha: "+this.Fecha);
+        System.out.println("Fecha: "+this.fecha);
         System.out.println("Nombre: "+this.Nombre);
         System.out.println("Edad: "+this.Edad);
         System.out.println("Direccion: "+this.Direccion);
