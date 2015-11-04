@@ -6,6 +6,8 @@
 
 package tiendaonline;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author lclap
@@ -15,9 +17,16 @@ public class TiendaOnline {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static ArrayList<Producto> producto = new ArrayList<Producto>();
+    public static void main(String[] args) {     
         Producto libro=new Producto("UML y Patrones", 200.00, 4, "Libro de UML");
-        libro.consultarProducto();
+        producto.add(libro);
+        
+        for (Producto p : producto) {
+			System.out.print("Nombre: "+p.nombre+"-->");
+		}
+        
+        /*libro.consultarProducto();
         Producto celular=new Producto("Iphone 6", 15000.00, 8, "Celular de ultima generacion Apple");
         celular.consultarProducto();
         Producto comic=new Producto("One-punch-man", 70.00, 12, "Comic Extranjero");
@@ -54,7 +63,9 @@ public class TiendaOnline {
         factura5.generafactura();
         Factura factura6= new Factura(3121999,cliente6,juego);
         factura6.generafactura();
-        System.out.println("Factura");
+        System.out.println("Factura");*/
+        
+        
     }
     
 }
