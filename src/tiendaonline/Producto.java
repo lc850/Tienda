@@ -23,13 +23,13 @@ public class Producto {
         this.descripcion=descripcion;
     }
     
-    public void setPrecio(double precio){
-        this.precio=precio;
-    }
-    
-    public double getPrecio(){
-        return this.precio;
-    }
+//    public void setPrecio(double precio){
+//        this.precio=precio;
+//    }
+//    
+//    public double getPrecio(){
+//        return this.precio;
+//    }
     
     public void consultarProducto(){
         System.out.println("Información del producto");
@@ -39,5 +39,14 @@ public class Producto {
         System.out.println("Existencia: "+this.existencia);
         System.out.println("Descripción: "+this.descripcion);
         System.out.println("--------------------------------------");
+    }
+    public String getNombre(){
+        	return nombre;
+        }
+    public String getDescripcion(){
+        	return descripcion;
+        }
+      public double getPrecio(){
+                return precio;
     }
 }
