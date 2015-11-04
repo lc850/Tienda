@@ -7,6 +7,7 @@
 package tiendaonline;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -25,7 +26,10 @@ public class TiendaOnline {
         for (Producto p : producto) {
 			System.out.print("Nombre: "+p.nombre+"-->");
 		}
-        
+        Scanner sc = new Scanner (System.in);
+         System.out.println("Teclea la opcion:");
+        int opcion=sc.nextInt();
+        System.out.println("Opcion_: "+opcion);
         /*libro.consultarProducto();
         Producto celular=new Producto("Iphone 6", 15000.00, 8, "Celular de ultima generacion Apple");
         celular.consultarProducto();
