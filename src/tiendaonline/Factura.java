@@ -1,11 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package tiendaonline;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -13,40 +10,42 @@ import java.util.Date;
  * @author Dracke
  */
 public class Factura{
-    
-   
-   
+
     java.util.Date fecha = new Date();
-    String Nombre;
-    int Edad;
-    String Direccion;
-    String Productos;
-    String Descripcion;
-    double Total;
+    String nombre;
+    int edad;
+    String direccion;
+    ArrayList<Producto> productos;
     
     
-        public Factura(int Fecha,Cliente A,Producto B ){
+    
+        public Factura(int Fecha,Cliente A, ArrayList<Producto> productos ){
             
             this.fecha = fecha;
-            this.Nombre= A.getNombre();
-            this.Edad= A.getEdad();
-            this.Direccion= A.getDireccion();
-            this.Productos = B.nombre;
-            this.Descripcion = B.descripcion;
-            this.Total = B.getPrecio();
+            this.nombre= A.getNombre();
+            this.edad= A.getEdad();
+            this.direccion= A.getDireccion();
+            this.productos = productos;
         }
         
         public void generafactura(){
+            // entonces aquì, ocuparian poner un ciclo recorriendo los productos e imprimir su informaciòn
+            // como mas les guste
         System.out.println("--------------------------------------");
         System.out.println("Informacion de la factura");
         System.out.println("--------------------------------------");
         System.out.println("Fecha: "+this.fecha);
-        System.out.println("Nombre: "+this.Nombre);
-        System.out.println("Edad: "+this.Edad);
-        System.out.println("Direccion: "+this.Direccion);
-        System.out.println("Productos: "+this.Productos);
-        System.out.println("Productos: "+this.Descripcion);
-        System.out.println("Total: "+this.Total);
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Edad: "+this.edad);
+        System.out.println("Direccion: "+this.direccion);
+        double total_global = 0;
+        for (Producto p : productos) {
+            System.out.println("Productos: "+p.nombre);
+            System.out.println("Productos: "+p.descripcion);
+            total_global += p.getPrecio();
+        }
+        
+        System.out.println("Total: "+ total_global);
         System.out.println("--------------------------------------");
     }
 }
