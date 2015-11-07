@@ -20,5 +20,5 @@ ____________________________________________________
 	- Consultar datos de factura
 	- total
 	- Generar factura
-- Asignar las facturas a los clientes
-- 
+- Asignar las facturas a los clientes (YA (pablo))
+- Crear un menu (YA (pablo))
