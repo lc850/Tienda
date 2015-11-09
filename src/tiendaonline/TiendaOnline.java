@@ -27,7 +27,10 @@ public class TiendaOnline {
         // aqui se pondrian todos los productos en la lista
         producto.add(new Producto("UML y Patrones", 200.00, 4, "Libro de UML"));
         producto.add(new Producto("Iphone 6", 15000.00, 8, "Celular de ultima generacion Apple"));
-
+        producto.add(new Producto("Epiphone SG",13000.00, 12, "Guitarra Electrica"));
+        producto.add(new Producto("Marshall 100w", 8000.00, 5, "Amlificador de Guitarra"));
+        producto.add(new Producto("Fender Stratocater", 2400.00, 7, "Guitarra Electrica"));
+        producto.add(new Producto("Ibañes RG1500", 75000.00, 8, "Guitarra Electrica"));
         for (int i = 0; i < producto.size(); i++) {
             // aqui mostramos la informacion usando la lista
             System.out.println("Producto: " + (i + 1));
