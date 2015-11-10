@@ -45,6 +45,7 @@ public class TiendaOnline {
         cliente = new Cliente("Homero", 40, "Calle Falsa 123");
 
         MostarProducto();
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("Teclea la opcion:");
 
