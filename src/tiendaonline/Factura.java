@@ -39,13 +39,18 @@ public class Factura{
         System.out.println("Edad: "+this.edad);
         System.out.println("Direccion: "+this.direccion);
         double total_global = 0;
+        double total_iva = 0 ;
+        double total = 0 ;
         for (Producto p : productos) {
-            System.out.println("Productos: "+p.nombre);
-            System.out.println("Productos: "+p.descripcion);
+            System.out.println("Productos: "+p.nombre +" $" + p.getPrecio());
+          //  System.out.println("Productos: "+p.descripcion);
             total_global += p.getPrecio();
+             total = total_global * .15;
+             total_iva = total_global - total ; 
         }
-        
-        System.out.println("Total: "+ total_global);
+            System.out.println(" Iva  : "+ total);
+         System.out.println("Total  : "+ total_iva);
+        System.out.println("Total ( Iva incluido ) : "+ total_global);
         System.out.println("--------------------------------------");
     }
 }
