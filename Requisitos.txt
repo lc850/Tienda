@@ -1,0 +1,24 @@
+﻿Requisitos del sistema de Tienda en línea
+____________________________________________________
+
+- Definir una clase producto con la información necesaria (OK)
+- Definir la clase principal que contiene el método main() (OK)
+- Definir una clase venta que contenga información de la venta y la lista de los
+	productos vendidos.
+- Clase venta:
+	- Imprimir lista de productos
+	- Guardar venta
+	- Consultar venta
+	- Finalizar venta
+- Definir una clase cliente, que contega la información del cliente (ya)
+	- Nombre
+	- Edad
+	- Dirección
+	- Consultar información
+- Definir la clase factura
+	- Fecha
+	- Consultar datos de factura
+	- total
+	- Generar factura
+- Asignar las facturas a los clientes (YA (pablo))
+- Crear un menu (YA (pablo))
