@@ -12,10 +12,12 @@ public class Cliente {
     String nombre;
     int edad;
     String direccion;
+    String email;
         public Cliente(String nombre,int edad,String direccion ){
             this.nombre = nombre;
             this.edad = edad;
             this.direccion = direccion;
+            this.email = email;
         }
         public void consultarDireccion(){
             System.out.println("Información del Cliente");
@@ -23,6 +25,7 @@ public class Cliente {
             System.out.println("Nombre: "+this.nombre);
             System.out.println("Edad: "+this.edad+" Años");
             System.out.println("Direccion: "+this.direccion);
+            System.out.println("Email: "+this.email);
             System.out.println("--------------------------------------");
         }
          public String getNombre(){
@@ -34,4 +37,8 @@ public class Cliente {
         public String getDireccion(){
         	return direccion;
         }
+        public String getEmail(){
+            return email;
+        }
+           
 }

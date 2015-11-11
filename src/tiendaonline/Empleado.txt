@@ -19,13 +19,14 @@ public class Empleado {
             this.nombre = nombre;
             this.edad = edad;
             this.direccion = direccion;
+            this.email = email;
             this.puesto=puesto;
         }
         public void consultarDireccion(){
-            System.out.println("Información del Empleado");
+            System.out.println("Informaciï¿½n del Empleado");
             System.out.println("--------------------------------------");
             System.out.println("Nombre: "+this.nombre);
-            System.out.println("Edad: "+this.edad+" Años");
+            System.out.println("Edad: "+this.edad+" Aï¿½os");
             System.out.println("Direccion: "+this.direccion);
 	    System.out.println("Puesto: "+this.puesto);
             System.out.println("--------------------------------------");
