@@ -34,6 +34,10 @@ public class TiendaOnline {
         producto.add(new Producto("tenis nike", 1000.00, 8, "Calzado"));
         producto.add(new Producto("Samsung galaxy S3", 5000.00, 3, "Celular"));
         producto.add(new Producto("Bicicleta apache", 250.00, 5, "Bicicleta"));
+        producto.add(new Producto("Motocicleta STRYKER", 169990.00, 5, "Motocicleta"));
+        producto.add(new Producto("Labrador", 2000.00, 1, "Perro"));
+    
+        
         for (int i = 0; i < producto.size(); i++) {
             // aqui mostramos la informacion usando la lista
             System.out.println("Producto: " + (i + 1));

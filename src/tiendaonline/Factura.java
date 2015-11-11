@@ -15,6 +15,7 @@ public class Factura{
     String nombre;
     int edad;
     String direccion;
+    String email;
     ArrayList<Producto> productos;
     
     
@@ -25,6 +26,7 @@ public class Factura{
             this.nombre= A.getNombre();
             this.edad= A.getEdad();
             this.direccion= A.getDireccion();
+            this.email= A.getEmail();
             this.productos = productos;
         }
         
@@ -38,6 +40,7 @@ public class Factura{
         System.out.println("Nombre: "+this.nombre);
         System.out.println("Edad: "+this.edad);
         System.out.println("Direccion: "+this.direccion);
+        System.out.println("Email: "+this.email);
         double total_global = 0;
         double total_iva = 0 ;
         double total = 0 ;
