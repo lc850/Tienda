@@ -19,7 +19,7 @@ public class TiendaOnline {
     public static void main(String[] args) {
         menu();
     }
-    public static void MostarProducto() 
+    public static void MostrarProducto() 
     {
         producto.add(new Producto("UML y Patrones", 200.00, 4, "Libro de UML"));
         producto.add(new Producto("Iphone 6", 15000.00, 8, "Celular de ultima generacion Apple"));
@@ -40,11 +40,17 @@ public class TiendaOnline {
             producto.get(i).consultarProducto();
         }
     }
+    
+   public static void Mostrarcliente(){
+        cliente = new Cliente("Homero",40,"Calle Falsa 123");
+        cliente.consultarDireccion();
+       
+   }
     public static void ComprarProducto() {
         // aqui un cliente.....
         cliente = new Cliente("Homero", 40, "Calle Falsa 123");
 
-        MostarProducto();
+        MostrarProducto();
         
         Scanner sc = new Scanner(System.in);
         System.out.println("Teclea la opcion:");
@@ -104,6 +110,7 @@ public class TiendaOnline {
             System.out.println("1.-Comprar");
             System.out.println("2.-Facturar");
             System.out.println("3.-Inventario");
+            System.out.println("4.-Informacion Cliente");
             System.out.println("0.-Salir");
 
             System.out.println("======================================");
@@ -122,8 +129,11 @@ public class TiendaOnline {
                     break;
                 case 3 : 
                    
-                     MostarProducto();
+                     MostrarProducto();
                      break;
+                case 4 : 
+                     Mostrarcliente();
+                             break;
             }
 
         }
