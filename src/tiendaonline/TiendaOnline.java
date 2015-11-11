@@ -36,7 +36,8 @@ public class TiendaOnline {
         producto.add(new Producto("Bicicleta apache", 250.00, 5, "Bicicleta"));
         producto.add(new Producto("Motocicleta STRYKER", 169990.00, 5, "Motocicleta"));
         producto.add(new Producto("Labrador", 2000.00, 1, "Perro"));
-    
+        producto.add(new Producto("Leon", 10000.00, 4, "gato"));
+        producto.add(new Producto("apache", 10006.00, 1, "bicicleta con nitro"));
         
         for (int i = 0; i < producto.size(); i++) {
             // aqui mostramos la informacion usando la lista
