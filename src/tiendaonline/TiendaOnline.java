@@ -38,7 +38,9 @@ public class TiendaOnline {
         producto.add(new Producto("Labrador", 2000.00, 1, "Perro"));
         producto.add(new Producto("Leon", 10000.00, 4, "gato"));
         producto.add(new Producto("apache", 10006.00, 1, "bicicleta con nitro"));
-        
+        producto.add(new Producto("HTC DESIRE 320", 2500.00, 3, "Celular"));
+        producto.add(new Producto("AMD FX 6300", 3500.00, 3, "Procesador"));
+        producto.add(new Producto("Dalmata", 10.00, 15, "Patelito"));
         for (int i = 0; i < producto.size(); i++) {
             // aqui mostramos la informacion usando la lista
             System.out.println("Producto: " + (i + 1));
